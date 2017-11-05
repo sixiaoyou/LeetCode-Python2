@@ -1,2 +1,3 @@
-import types
-from compiler.ast import flatten
+a=["a", "banana", "app", "appl", "ap", "apply", "apple"]
+a.sort()
+print a
