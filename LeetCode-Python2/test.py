@@ -1,2 +1,2 @@
 
-print "".join(a)
+print 5/2
