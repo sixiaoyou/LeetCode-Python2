@@ -20,7 +20,21 @@ The length of pairs will not exceed 2000.
 The length of each pairs[i] will be 2.
 The length of each words[i] and pairs[i][j] will be in the range [1, 20].
 '''
-class Solution(object):
+class SolutionV1(object):
+    def areSentencesSimilar(self, words1, words2, pairs):
+        """
+        :type words1: List[str]
+        :type words2: List[str]
+        :type pairs: List[List[str]]
+        :rtype: bool
+        """
+        if (len(words1) != len(words2)): return False
+        pairSet = set(map(tuple, pairs))
+        return all((w1 == w2) or (w1, w2) in pairSet or (w2, w1) in pairSet for w1, w2 in zip(words1, words2))
+
+
+
+class SolutionV2(object):
     def areSentencesSimilar(self, words1, words2, pairs):
         """
         :type words1: List[str]
