@@ -41,7 +41,7 @@ letters consists of lowercase letters, and contains at least 2 unique letters.
 target is a lowercase letter.
 
 '''
-class Solution:
+class SolutionV1:
     def nextGreatestLetter(self, letters, target):
         """
         :type letters: List[str]
@@ -53,3 +53,29 @@ class Solution:
                     return letters[i]
                 elif i == len(letters) - 1 :
                     return letters[0]
+
+#网友实现
+class SolutionV2(object):
+    def nextGreatestLetter(self, letters, target):
+        """
+        :type letters: List[str]
+        :type target: str
+        :rtype: str
+        """
+        length = len(letters)
+        if target >= letters[length - 1]:
+            return letters[0]
+        else:
+            target = chr(ord(target) + 1)
+        start, end = 0, length - 1
+        while (start < end):
+            mid = start + (end - start) / 2
+            if letters[mid] == target:
+                return letters[mid]
+            elif letters[mid] < target:
+                start = mid + 1
+            else:
+                end = mid
+        return letters[end]
+
+
