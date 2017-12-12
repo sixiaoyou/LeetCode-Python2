@@ -54,7 +54,7 @@ class SolutionV1:
                 elif i == len(letters) - 1 :
                     return letters[0]
 
-#网友实现
+#【网友实现】https://discuss.leetcode.com/topic/113450/easy-binary-search-in-java-o-log-n-time
 class SolutionV2(object):
     def nextGreatestLetter(self, letters, target):
         """
