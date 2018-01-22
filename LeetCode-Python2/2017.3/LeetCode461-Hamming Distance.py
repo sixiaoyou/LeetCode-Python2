@@ -26,8 +26,16 @@ The above arrows point to positions where the corresponding bits are different.
 Subscribe to see which companies asked this question.
 
 '''
+class SolutionV1(object):
+    def hammingDistance(self, x, y):
+        """
+        :type x: int
+        :type y: int
+        :rtype: int
+        """
+        return bin(x ^ y).count('1')
 
-class Solution(object):
+class SolutionV2(object):
     def hammingDistance(self, x, y):
         """
         :type x: int
@@ -39,3 +47,4 @@ class Solution(object):
             z = x ^ y
             list1 = list(bin(z))
             return list1.count('1')
+
