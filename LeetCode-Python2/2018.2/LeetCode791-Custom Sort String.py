@@ -1,5 +1,6 @@
 '''
 【Python3代码不变，故可参照此Python2代码】
+test
 LeetCode791. Custom Sort String
 S and T are strings composed of lowercase letters. In S, no letter occurs more than once.
 
