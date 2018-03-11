@@ -1,4 +1,5 @@
 '''
+【Python3代码不变,故可参照此Python2代码】
 LeetCode796. Rotate String
 We are given two strings, A and B.
 
