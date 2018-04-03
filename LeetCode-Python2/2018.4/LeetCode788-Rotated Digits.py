@@ -1,4 +1,5 @@
 '''
+【Python3代码不变，故可参照此Python2代码】
 LeetCode788. Rotated Digits
 X is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X.  Each digit must be rotated - we cannot choose to leave it alone.
 
