@@ -1,4 +1,5 @@
 '''
+【Python3代码不变，故可参考此Python2代码】
 LeetCodePrime Number of Set Bits in Binary Representation
 Given two integers L and R, find the count of numbers in the range [L, R] (inclusive) having a prime number of set bits in their binary representation.
 
